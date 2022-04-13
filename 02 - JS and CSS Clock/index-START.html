@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>JS + CSS Clock</title>
+  <script src="index.js" defer></script>
 </head>
 <body>
 
@@ -57,18 +58,27 @@
     }
 
     .hand {
-      width: 50%;
       height: 6px;
       background: black;
       position: absolute;
       top: 50%;
+      right:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 50ms; 
+      transition-timing-function: ease-in-out;
+      border-radius: 2px;
+    }
+    .hour-hand{
+      width:30%;
+    }
+    .min-hand{
+      width:40%;
+    }
+    .second-hand{
+      width: 50%;
     }
 
   </style>
-
-  <script>
-
-
-  </script>
 </body>
 </html>
